@@ -1,12 +1,21 @@
 Adamsmeat/Output
 ================
+================
 
 Backend output manager for the browser
 
 ## Configuration
 
-Merge ['Adamsmeat\Output\OutputServiceProvider'] into Config::get('app.providers').
-Merge ['Output' => 'Adamsmeat\Output\OutputFacade'] into Config::get('app.aliases').
+```
+<?php
+return array(
+	'providers' => 'Adamsmeat\Output\OutputServiceProvider',
+	'aliases' => array(
+		'Output' => 'Adamsmeat\Output\OutputFacade',
+	)
+);
+?>
+```
 
 ### Usage
 

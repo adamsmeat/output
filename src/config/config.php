@@ -52,7 +52,7 @@ return array(
 	),
 
 	// package meta
-	'readme_file' => 'https://raw.github.com/adamsmeat/output/master/README.md',
+	'readme_file' => 'https://bitbucket.org/xyra/adamsmeat-output/raw/8a7f846cb9bc901a75bae711d3df1504221558a4/README.md',
 
 	// themes
 	'basic' => array(

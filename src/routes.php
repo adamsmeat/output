@@ -11,6 +11,11 @@
 
 Route::get('output', function()
 {	
+	return Output::sendView();
+});
+
+Route::get('output/readme', function()
+{	
 	$md_content = file_get_contents(Output::cfg('readme_file'));
 	return Output::sendView()->with('content', Output::md_to_html($md_content));
 });
@@ -19,7 +24,7 @@ Route::get('output', function()
 Route::get('output/theme/basic', function()
 {
 	//Output::theme('basic')->sendView();
-	return Output::theme('basic')->sendView();
+	return Output::setTheme('basic')->sendView();
 });
 
 
@@ -51,7 +56,12 @@ Route::get('angularjs', function(){
 
 
 
-//extra routes
+/*
+|--------------------------------------------------------------------------
+| Some routes used for links and demo
+|--------------------------------------------------------------------------
+|
+*/
 
 Route::get('mga-kasunduan', function()
 {
@@ -80,8 +90,6 @@ Route::get('registration', ['as' => 'registration', 'before' => 'guest', functio
 Route::post('registration', function()
 {
     // Differentiate between oauth-based vs manual(password used) type login
-
-
 
     $rules = [
     	'username' => [

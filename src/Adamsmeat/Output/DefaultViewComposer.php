@@ -40,6 +40,7 @@ class DefaultViewComposer {
     protected function _buildPartials() 
     {
         foreach ($this->output->cfg('partials') as $key => $file)
-            $this->view->nest($key, $file);
+            if(! isset($this->view->$key))
+                $this->view->nest($key, $file);
     }
 }
