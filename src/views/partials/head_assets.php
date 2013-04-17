@@ -1,0 +1,2 @@
+<?=Output::css()?>
+<?=Output::js()?>

@@ -1,0 +1,8 @@
+body {
+	text-align:center;
+}
+#wrapAll {
+	text-align:left;
+	max-width:1000px;
+	margin:20px auto;
+}
