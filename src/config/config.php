@@ -29,7 +29,7 @@ return array(
 		'site_name'   => 'BarangayPH.com', 		
 		'site_headline'   => 'adamsmeat/output default template', 		
 		'page_title'   => 'adamsmeat/output default template', 		
-		'show_page_title'   => true, 		
+		'show_page_title'   => false, 		
 		'content' => 'Default content',
 	),
 
@@ -42,12 +42,13 @@ return array(
 		'js' => array(
 			'head' => array(
 				'jquery' => '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',
+				'bootstrap' => '//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js',				
 			),
 			'footer' => array(
-				'bootstrap' => '//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js',				
 				'bootstrap-plugin' => '/packages/adamsmeat/output/js/bootstrap-plugin.js',
 				'angularjs' => '//ajax.googleapis.com/ajax/libs/angularjs/1.1.4/angular.min.js',
-				'angularjs-plugin' => '/packages/adamsmeat/output/js/angular-plugin.js',
+				'angularjs-plugin' => '/packages/adamsmeat/output/js/angularjs-plugin.js',
+				'main' => '/packages/adamsmeat/output/js/main.js',
 			),
 		),		
 	),
