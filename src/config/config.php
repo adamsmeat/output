@@ -3,7 +3,6 @@
 return array(
 //default
 	'theme' => 'default',
-
 	'file' => 'output::template',
 
 	// this specifies how a certain file is built 
@@ -25,10 +24,12 @@ return array(
 
 	// keys should be valid variable names
 	// access as $g['key'] in view files
+	// settings
  	'globals' => array(
 		'site_name'   => 'BarangayPH.com', 		
 		'site_headline'   => 'adamsmeat/output default template', 		
 		'page_title'   => 'adamsmeat/output default template', 		
+		'show_page_title'   => true, 		
 		'content' => 'Default content',
 	),
 
@@ -52,7 +53,7 @@ return array(
 	),
 
 	// package meta
-	'readme_file' => 'https://bitbucket.org/xyra/adamsmeat-output/raw/8a7f846cb9bc901a75bae711d3df1504221558a4/README.md',
+	'readme_file' => 'https://raw.github.com/adamsmeat/output/master/README.md',
 
 	// themes
 	'basic' => array(

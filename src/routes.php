@@ -17,7 +17,9 @@ Route::get('output', function()
 Route::get('output/readme', function()
 {	
 	$md_content = file_get_contents(Output::cfg('readme_file'));
-	return Output::sendView()->with('content', Output::md_to_html($md_content));
+	return Output::cfg(array('globals.show_page_title' => false))
+	->sendView()
+	->with('content', Output::md_to_html($md_content));
 });
 
 // demo using theme

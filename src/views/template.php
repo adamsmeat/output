@@ -16,7 +16,9 @@
 			<div class="row-fluid">
 				<div id="sidebar" class="span3"><?=$sidebar?></div>
 				<div id="content" class="span9">
+					<?php if (g('show_page_title')): ?>
 					<h1 class="page-header"><?=g('page_title')?></h1>
+					<?php endif; ?>
 					<?=$content?>
 				</div>
 			</div>
