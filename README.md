@@ -25,7 +25,7 @@ Chain the following methods to return Illuminate\View\View object
 - cfg() When you need to modify this's packages config by passing an array.
 - sendView() returns the final view based off runtime config
 
-## Global variables
+### Global variables
 
 Access in view files through the g('key') or Output::g(key) function which is the array set in output::config file with key 'globals'.
 
